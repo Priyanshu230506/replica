@@ -10,8 +10,8 @@
     <header>
         <section>
             <div class="left">
-                <img src="hii.svg" alt="logo" class="logo">
-                <p>/</p>
+                <img src="hii.svg" alt="logo" height="20px" class="logo">
+                <p style="font-size: 1.5rem; opacity: .2;">/</p>
                 <div class="circle"></div>
                 <h1>Replica's Project</h1>
                 <div class="box">Hobby</div>
@@ -22,18 +22,20 @@
             
             <div class="right">
                 <div class="search">
-                    <input type="search" placeholder="Find...">
+                    <img src="svgviewer-png-output.png" style="margin-bottom: -4px;padding-right: 2px;" alt="" class="searchicon">
+                    <input type="search" placeholder="Find..." style="padding-left: 30px;">
                     <button class="find">F</button>
                 </div>
                 <button>Feedback</button>
-                <button><img src="bell-icon.svg" alt=""></button>
-                <button><img src="book.svg" alt=""></button>
+                <button id="circle2"><img src="bell-icon.svg" alt=""></button>
+                <button id="circle2"><img src="book.svg" alt=""></button>
                 <img src="" alt="">
+                <div class="circle4"></div>
             </div>
         </section>
         <nav>
-            <a href="#">Overview</a>
-            <a href="#">Integreations</a>
+            <a href="#" class="overview">Overview</a>
+            <a href="#">Integrations</a>
             <a href="#">Deployments</a>
             <a href="#">Activity</a>
             <a href="#">Domains</a> 
@@ -48,36 +50,43 @@
     </header>
     <div class="container">
         <div class="searchbar">
-            <input type="text" class="searchinput" placeholder="🔍 Search Projects...">
+            <img src="svgviewer-png-output.png" alt=""class="searchicon">
+            <input type="text" class="searchinput" placeholder="Search Projects...">
             <div class="viewcontrols">
-                <button class="btn">☰</button>
-                <button class="btn">⊞</button>
-                <button class="btn">☰</button>
-                <button class="btnprimary">Add New...</button>
+                <button class="btn"><img src="svgviewer-png-output(1).png" alt=""></button>
+               <div style="background: white; border-radius: 6px; border-color: rgb(235, 235, 235);border-width: 5px; z-index: 3;padding: 3px;">
+                <button class="btn" style="background: rgb(250, 250, 250);border-radius: 5px;"><img src="grid-icon.svg" alt=""></button>
+                <button class="btn"><img src="hamburger.svg" alt=""></button>
+               </div>
+                <button class="btnprimary">Add New...     <span style="font-size: 1rem;">˅</span></button>
             </div>
         </div>
 
         <div class="maincontent">
             <div class="sidebar">
+                <div class="usageheader">
+                        <h3 style="font-size: 1.1rem;">Usage</h3>
+                    </div>
                 <div class="card">
-                    <div class="usageheader">
-                        <h3>Usage</h3>
+                    <div class="usagehead">
+                        <div class="usagecont">
+                            <div class="usageperiod">Last 30 days</div>
+                            <div class="usageupdated">Updated 11m ago</div>
+                        </div>
                         <button class="upgradebtn">Upgrade</button>
                     </div>
-                    <div class="usageperiod">Last 30 days</div>
-                    <div class="usageupdated">Updated 11m ago</div>
                     
                     <div class="usageitem">
                         <div class="usagelabel">
-                            <div class="usagedot"></div>
+                            <div><img src="Progress-circle.png" alt="" class="upload"></div>
                             Fast Data Transfer
                         </div>
                         <div class="usagevalue">773.59 MB / 100 GB</div>
                     </div>
                     
-                    <div class="usageitem">
+                    <div class="usageitem" style="background: white;">
                         <div class="usagelabel">
-                            <div class="usagedot"></div>
+                            <div><img src="Progress-circle.png" alt="" class="upload"></div>
                             Edge Requests
                         </div>
                         <div class="usagevalue">6.6K / 1M</div>
@@ -85,82 +94,110 @@
                     
                     <div class="usageitem">
                         <div class="usagelabel">
-                            <div class="usagedot"></div>
+                            <div ><img src="Progress-circle.png" alt="" class="upload"></div>
                             Edge Request CPU Duration
                         </div>
                         <div class="usagevalue">0s / 1h</div>
                     </div>
+                    <div class="roundbtn">
+                    <img src="down-arrow(1).png" alt="" height="12px" style="opacity: .8;" >
                 </div>
+                </div>
+                
 
+
+                <h3>Recent Previews</h3>
                 <div class="card">
-                    <h3>Recent Previews</h3>
                     <div class="previewplaceholder">
-                        <img src="favicon4.png" alt="" class="previeweye">
+                        <!-- i have used svg as the the image was showing error -->
+                        <div class="previeweye2" style= "border:rgba(235, 235, 235, 0.288);border-width: 2px; border-radius: 30%; height:45px; width: fit-content; border-style: solid; margin-left: auto;margin-right: auto;margin-bottom: 20px;">
+                           <img src="eye.png" height="40px" alt="">
+                        </div>
                         <p>Preview deployments that you have recently visited or created will appear here.</p>
                     </div>
                 </div>
             </div>
 
             <div class="projectssection">
-                <h2>Projects</h2>
-                
-                <div class="projectitem">
+                <h3 style="margin-bottom: 30px;">Projects</h3>
+
+                <div class="projhead">
+                    <div class="projectitem">
+                    <div class="projheader">
                     <div class="projecticon sparkicon"><img src="favicon1.svg" alt=""></div>
                     <div class="projectdetails">
-                        <div class="projectname">spark-2-k25-2-k26</div>
-                        <div class="projecturl">spark-2k25.vercel.app</div>
+                        <div class="projectname" style="margin-left: 20px; font-size: 1.05rem; margin-top: -4px;">spark-2-k25-2-k26</div>
+                        <div class="projecturl" style ="margin-left:20px; font-size: 1.05rem;margin-bottom: 4px;">spark-2k25.vercel.app</div>
+                </div>
+                <div class="projectactions">
+                        <button class="actionbtn"><img src="heart-beart.svg" alt=""></button>
+                        <button class="btn2">⋯</button>
+                </div>
+                </div>
+                <div class="projdown">
                         <div class="projectrepo">
-                            <span>⚬</span>
+                            <span><img src="github.svg" alt=""></span>
                             Replica/Spark-2K25---2K26
                         </div>
                         <div class="projectactivity">
                             <strong>Added README.md</strong><br>
-                            Aug 20 on 🌿 main
+                            <span style="opacity: .5;">Aug 20 on <span><img src="linktree.png" height="25px" style="margin-bottom: -7px;" alt=""></span> main</span>
+                        </div>
                         </div>
                     </div>
-                    <div class="projectactions">
-                        <button class="actionbtn">📊</button>
-                        <button class="actionbtn">⋯</button>
-                    </div>
                 </div>
-
-                <div class="projectitem">
-                    <div class="projecticon jovianicon"><img src="favicon2.png" alt=""></div>
+                
+                <div class="projhead">
+                    <div class="projectitem">
+                    <div class="projheader">
+                    <div class="projecticon sparkicon"><img src="favicon2.png" alt=""></div>
                     <div class="projectdetails">
-                        <div class="projectname">jovian-responsive-page</div>
-                        <div class="projecturl">jovian-responsive-page.vercel.app</div>
+                        <div class="projectname" style="margin-left: 20px; font-size: 1.05rem; margin-top: -4px;">jovian-responsive-page</div>
+                        <div class="projecturl" style ="margin-left:20px; font-size: 1.05rem;margin-bottom: 4px;">jovian-responsive-page.vercel.app</div>
+                    </div>
+                <div class="projectactions">
+                        <button class="actionbtn"><img src="heart-beart.svg" alt=""></button>
+                        <button class="btn2">⋯</button>
+                </div>
+                </div>
+                <div class="projdown">
                         <div class="projectrepo">
-                            <span>⚬</span>
+                            <span><img src="github.svg" alt=""></span>
                             Replica/jovian-responsive-...
                         </div>
                         <div class="projectactivity">
                             <strong>fixed a mistake</strong><br>
-                            6/27/24 on 🌿 main
+                            <span style="opacity: .5;">6/27/24 on <span><img src="linktree.png" height="25px" style="margin-bottom: -7px;" alt=""></span> main</span>
                         </div>
-                    </div>
-                    <div class="projectactions">
-                        <button class="actionbtn">📊</button>
-                        <button class="actionbtn">⋯</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="projectitem">
-                    <div class="projecticon profileicon"><img src="favicon3.png" alt=""></div>
+
+
+                 <div class="projhead">
+                    <div class="projectitem">
+                    <div class="projheader">
+                    <div class="projecticon sparkicon"><img src="favicon3.png" alt=""></div>
                     <div class="projectdetails">
-                        <div class="projectname">profile</div>
-                        <div class="projecturl">profile.vercel.app</div>
+                        <div class="projectname" style="margin-left: 20px; font-size: 1.05rem; margin-top: -4px;">profile</div>
+                        <div class="projecturl" style ="margin-left:20px; font-size: 1.05rem;margin-bottom: 4px;">profile.vercel.app</div>
+                    </div>
+                <div class="projectactions">
+                        <button class="actionbtn"><img src="heart-beart.svg" alt=""></button>
+                        <button class="btn2">⋯</button>
+                </div>
+                </div>
+                <div class="projdown">
                         <div class="projectrepo">
-                            <span>⚬</span>
+                            <span><img src="github.svg" alt=""></span>
                             Replica/profile
                         </div>
                         <div class="projectactivity">
                             <strong>Initial commit</strong><br>
-                            5/15/24 on 🌿 main
+                            <span style="opacity: .5;">5/15/24 on<span><img src="linktree.png" height="25px" style="margin-bottom: -7px;" alt=""></span> main</span>
                         </div>
-                    </div>
-                    <div class="projectactions">
-                        <button class="actionbtn">📊</button>
-                        <button class="actionbtn">⋯</button>
+                        </div>
                     </div>
                 </div>
             </div>
